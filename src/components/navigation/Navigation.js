@@ -6,9 +6,11 @@ import MobileNav from './MobileNav';
 
 function Navigation() {
   return (
-    <div className='pl-3 md:pl-0 md:px-3 py-5'>
+    <div className='pl-3 md:pl-0 md:px-3 py-5 overflow-hidden'>
       <header className='container mx-auto flex justify-between'>
-        <Link to='/'>Bek.</Link>
+        <Link to='/' className='text-lg font-semibold'>
+          Bek.
+        </Link>
         <DesktopNav navigation={navigation} />
         <MobileNav navigation={navigation} />
       </header>

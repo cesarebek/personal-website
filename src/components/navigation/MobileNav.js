@@ -12,7 +12,7 @@ function MobileNav({ navigation }) {
   };
 
   return (
-    <div class='md:hidden'>
+    <div className='md:hidden'>
       <GiHamburgerMenu
         className='mr-5 cursor-pointer text-lg'
         onClick={toggleMenu}
@@ -23,7 +23,7 @@ function MobileNav({ navigation }) {
         initial='hidden'
         animate={toggle ? 'open' : 'close'}
         transition='transition'
-        className='w-1/2 sm:w-1/3 h-screen bg-gray-300 absolute top-0 right-0'
+        className='w-1/2 sm:w-1/3 h-screen bg-gray-300 fixed top-0 right-0 z-20'
       >
         <nav className=' flex flex-col h-full justify-center items-center space-y-6 relative'>
           {navigation.map((nav) => (
