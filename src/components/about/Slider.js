@@ -15,13 +15,13 @@ import next from '../../assets/images/next.svg';
 const settings = {
   arrows: true,
   infinite: true,
-  speed: 1000,
+  speed: 500,
   autoplay: true,
   variableWidth: true,
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 400,
+      breakpoint: 0,
       settings: {
         slidesToShow: 1,
       },
@@ -29,25 +29,25 @@ const settings = {
     {
       breakpoint: 640,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
       },
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3,
       },
     },
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 5,
+        slidesToShow: 4,
       },
     },
     {
       breakpoint: 1280,
       settings: {
-        slidesToShow: 6,
+        slidesToShow: 5,
       },
     },
   ],
@@ -58,19 +58,19 @@ function Slider() {
     <div className='my-20 container mx-auto overflow-hidden'>
       <Slick {...settings} className=''>
         <div>
-          <img className='h-32 mx-10' src={reactIcon} alt='' />
+          <img className='h-32 mx-5' src={reactIcon} alt='' />
         </div>
         <div>
-          <img className='h-32 mx-10' src={api} alt='' />
+          <img className='h-32 mx-5' src={api} alt='' />
         </div>
         <div>
-          <img className='h-32 mx-10' src={nuxt} alt='' />
+          <img className='h-32 mx-5' src={nuxt} alt='' />
         </div>
         <div>
-          <img className='h-32 mx-10' src={js} alt='' />
+          <img className='h-32 mx-5' src={js} alt='' />
         </div>
         <div>
-          <img className='h-32 mx-10' src={css} alt='' />
+          <img className='h-32 mx-5' src={css} alt='' />
         </div>
         <div>
           <img className='h-32 mx-10' src={vue} alt='' />

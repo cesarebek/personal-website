@@ -14,7 +14,7 @@ function Hero() {
         </p>
         <div className='pt-6 transform duration-300 hover:-translate-y-2 hover:shadow-3xl inline-block'>
           <Link
-            className='bg-indigo-500 rounded-full py-4 px-6 md:py-5 md:px-7 text-white font-semibold '
+            className='bg-indigo-500 shadow-lg rounded-full py-4 px-6 md:py-5 md:px-7 text-white font-semibold '
             to='/portfolio'
           >
             Explore works
@@ -22,7 +22,7 @@ function Hero() {
         </div>
       </div>
       <img
-        className='mt-20 lg:mt-0 sm:w-3/4 md:w-2/3 lg:w-2/5'
+        className='mt-20 lg:mt-0 sm:w-3/4 md:w-2/3 lg:w-2/5 xl:w-1/2 h-auto'
         src={profile}
         alt='avatar'
       />
