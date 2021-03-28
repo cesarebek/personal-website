@@ -1,9 +1,11 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Skills from '../components/Skills';
+import LastProjects from '../components/LastProjects';
+import { allProjects } from '../utils/data';
 import HomeWave from '../components/waves/HomeWave';
 
 function Home() {
+  const projects = allProjects.slice(0, 3);
   return (
     <>
       <div className='min-h-screen mt-10 md:mt-0 md:flex items-center relative mx-auto'>
@@ -12,8 +14,8 @@ function Home() {
           <HomeWave />
         </div>
       </div>
-      <div className='bg-indigo-400 h-screen pt-5'>
-        <Skills />
+      <div className='bg-indigo-400 pt-5'>
+        <LastProjects projects={projects} />
       </div>
     </>
   );
