@@ -5,7 +5,8 @@ import {
   AiOutlineInstagram,
 } from 'react-icons/ai';
 import { BiRocket } from 'react-icons/bi';
-
+import { motion } from 'framer-motion';
+import { titleLeft, titleRight } from '../../utils/animations';
 export default function Banner() {
   return (
     <div className='relative flex items-center justify-center cursor-default'>
@@ -15,18 +16,37 @@ export default function Banner() {
         alt='mountains'
       />
       <div className='absolute flex flex-col items-center text-center space-y-2'>
-        <p className='uppercase text-white text-4xl md:text-7xl font-semibold'>
+        <motion.p
+          variants={titleLeft}
+          className='uppercase text-white text-4xl md:text-7xl font-semibold'
+        >
           Cezary Bek
-        </p>
-        <p className='uppercase text-lg md:text-xl font-semibold text-white'>
-          I am a passionate developer
-        </p>
-        <div className='flex space-x-5 text-white text-2xl cursor-pointer'>
-          <BiRocket className='duration-200 hover:text-indigo-900' />
-          <AiOutlineLinkedin className='duration-200 hover:text-indigo-900' />
-          <AiOutlineFacebook className='duration-200 hover:text-indigo-900' />
-          <AiOutlineInstagram className='duration-200 hover:text-indigo-900' />
-        </div>
+        </motion.p>
+        <motion.div
+          variants={titleRight}
+          className='flex flex-col items-center'
+        >
+          <p className='uppercase text-lg md:text-xl font-semibold text-white'>
+            I am a passionate developer
+          </p>
+          <div className='flex space-x-5 text-white text-2xl cursor-pointer'>
+            <a href='https://talent.start2impact.it/profile/cesare-bek'>
+              <BiRocket className='duration-200 hover:text-indigo-900' />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/cezary-bek-b28766173/'
+              target='_black'
+            >
+              <AiOutlineLinkedin className='duration-200 hover:text-indigo-900' />
+            </a>
+            <a href='https://www.facebook.com/cesare.bich'>
+              <AiOutlineFacebook className='duration-200 hover:text-indigo-900' />
+            </a>
+            <a href='https://www.instagram.com/cesare_bek'>
+              <AiOutlineInstagram className='duration-200 hover:text-indigo-900' />
+            </a>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

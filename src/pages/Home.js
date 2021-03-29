@@ -17,10 +17,8 @@ function Home() {
       exit='exit'
     >
       <div className='min-h-screen mt-10 md:mt-0 md:flex items-center relative mx-auto'>
-        <div className='container mx-auto xl:px-20 pb-28'>
-          <Hero />
-          <HomeWave />
-        </div>
+        <Hero />
+        <HomeWave />
       </div>
       <div className='bg-indigo-400 pt-5'>
         <LastProjects projects={projects} />
