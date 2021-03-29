@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import validator from 'validator';
 import { BsArrowRight } from 'react-icons/bs';
+//Animation
+import { motion } from 'framer-motion';
+import { pageTransition } from '../utils/animations';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -34,7 +37,13 @@ function Contact() {
     }
   };
   return (
-    <div className='bg-gray-900 min-h-screen'>
+    <motion.div
+      variants={pageTransition}
+      initial='hidden'
+      animate='show'
+      exit='exit'
+      className='bg-gray-900 min-h-screen'
+    >
       <div className='container mx-auto md:px-20 lg:px-32 px-5'>
         <div className='text-white w-full lg:flex pt-12'>
           <div className='lg:w-1/2'>
@@ -97,7 +106,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { allProjects } from '../utils/data';
 import HomeWave from '../components/waves/HomeWave';
+import Banner from '../components/projectSection/Banner';
+import Screenshots from '../components/projectSection/Screenshots';
 
 function Project() {
   const params = useParams();
@@ -18,7 +20,12 @@ function Project() {
         </div>
         <HomeWave />
       </div>
-      <div className='bg-indigo-400 min-h-screen'></div>
+      <div className='bg-indigo-400 min-h-screen'>
+        <Banner project={project} />
+        {project.screenshots && (
+          <Screenshots screenshots={project.screenshots} />
+        )}
+      </div>
     </div>
   );
 }

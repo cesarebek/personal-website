@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
-    <section className='lg:flex justify-between px-3'>
+    <section className='lg:flex justify-between items-center px-3'>
       <div className='w-full lg:w-3/5 xl:w-1/2 flex-shrink-0 space-y-7'>
         <p className='-mb-3 font-medium'>I'm Cezary Bek,</p>
         <p className='uppercase font-medium'>Junior full stack developer</p>

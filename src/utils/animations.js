@@ -25,3 +25,24 @@ export const projectCard = {
     y: 0,
   },
 };
+
+export const pageTransition = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: 100,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
