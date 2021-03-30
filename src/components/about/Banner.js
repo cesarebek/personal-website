@@ -30,7 +30,10 @@ export default function Banner() {
             I am a passionate developer
           </p>
           <div className='flex space-x-5 text-white text-2xl cursor-pointer'>
-            <a href='https://talent.start2impact.it/profile/cesare-bek'>
+            <a
+              href='https://talent.start2impact.it/profile/cesare-bek'
+              target='_black'
+            >
               <BiRocket className='duration-200 hover:text-indigo-900' />
             </a>
             <a
@@ -39,10 +42,10 @@ export default function Banner() {
             >
               <AiOutlineLinkedin className='duration-200 hover:text-indigo-900' />
             </a>
-            <a href='https://www.facebook.com/cesare.bich'>
+            <a href='https://www.facebook.com/cesare.bich' target='_black'>
               <AiOutlineFacebook className='duration-200 hover:text-indigo-900' />
             </a>
-            <a href='https://www.instagram.com/cesare_bek'>
+            <a href='https://www.instagram.com/cesare_bek' target='_black'>
               <AiOutlineInstagram className='duration-200 hover:text-indigo-900' />
             </a>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../../assets/images/profile.png';
+import desk from '../../assets/images/desk.jpg';
 
 function HardSkills() {
   return (
@@ -12,21 +12,21 @@ function HardSkills() {
           <p className='text-xl font-medium'>
             My consolidated knowledge on the front-end side is:
           </p>
-          <ul className='list-disc'>
+          <ul>
             <li>React JS / Next JS</li>
             <li>Vue JS / Nuxt JS</li>
             <li>HTML</li>
             <li>CSS / SCSS</li>
           </ul>
           <p className='text-xl font-medium'>
-            On the other hand the the back-end side I use:
+            On the other hand for the back-end side I use:
           </p>
-          <ul className='list-disc'>
+          <ul>
             <li>Laravel</li>
           </ul>
         </div>
-        <div className='md:w-1/2'>
-          <img src={profile} alt='' />
+        <div className='md:w-1/2 overflow-hidden rounded-2xl mt-10 sm:mt-0'>
+          <img src={desk} alt='' />
         </div>
       </div>
     </div>

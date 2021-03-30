@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../../assets/images/profile.png';
+import me from '../../assets/images/me.jpeg';
 
 function Me() {
   return (
@@ -9,7 +9,7 @@ function Me() {
         <p className='mt-5 md:text-xl font-semibold'>
           Hi! I'm Cezary, Junior Full Stack Developer certified by Start2Impact.
         </p>
-        <p className='mt-2 md:text-lg'>
+        <p className='mt-2 text-lg'>
           I love to code Web Applications that are eye-catching, clean and
           functional.
         </p>
@@ -20,8 +20,8 @@ function Me() {
           successful life. Personal growth and improvement are my priority.
         </p>
       </div>
-      <div className='md:w-1/2'>
-        <img src={profile} alt='' />
+      <div className='md:w-1/2 overflow-hidden rounded-2xl'>
+        <img src={me} alt='profile' />
       </div>
     </div>
   );
