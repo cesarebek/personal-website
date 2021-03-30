@@ -4,6 +4,7 @@ import { BsArrowRight } from 'react-icons/bs';
 //Animation
 import { motion } from 'framer-motion';
 import { pageTransition } from '../utils/animations';
+import Mapbox from '../components/contact/Mapbox';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -101,8 +102,8 @@ function Contact() {
               </div>
             </form>
           </div>
-          <div className='flex items-center justify-center w-full lg:w-1/2'>
-            MAPPA
+          <div className='flex items-center justify-center w-full lg:w-1/2 ml-10'>
+            <Mapbox />
           </div>
         </div>
       </div>
