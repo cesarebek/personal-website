@@ -10,7 +10,7 @@ export const allProjects = [
     id: 0,
     title: 'Netflix',
     category: 'films',
-    tech: 'react',
+    tech: 'nuxt',
     description:
       "The Nuxtflix project is a platform that returns info about all the world tv shows, movies and actors. It's insipired to the most famous streaming hub, Netflix.com! Enjoy the Live Demo!",
     gitLink: 'https://github.com/cesarebek/Nuxtflix',
