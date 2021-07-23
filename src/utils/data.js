@@ -14,7 +14,7 @@ export const allProjects = [
     description:
       "The Nuxtflix project is a platform that returns info about all the world tv shows, movies and actors. It's insipired to the most famous streaming hub, Netflix.com! Enjoy the Live Demo!",
     gitLink: 'https://github.com/cesarebek/Nuxtflix',
-    demo: 'https://nuxtflix.herokuapp.com',
+    demo: 'https://nuxtflix.vercel.app/',
     thumbnail:
       'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80',
   },
